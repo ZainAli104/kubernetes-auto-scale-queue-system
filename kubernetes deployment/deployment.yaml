@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbitmq-consumer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rabbitmq-consumer
+  template:
+    metadata:
+      labels:
+        app: rabbitmq-consumer
+    spec:
+      containers:
+      - name: rabbitmq-consumer
+        image: zainali104/rabbitmq-consumer
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: RABBITMQ_HOST
+            value: "amqp://guest:guest@localhost:5672/"
+          - name: RABBITMQ_USER
+            value: "guest"
+          - name: RABBITMQ_PASSWORD
+            value: "guest"
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "256Mi"

@@ -1,0 +1,4 @@
+github.com/rabbitmq/amqp091-go v1.10.0 h1:STpn5XsHlHGcecLmMFCtg7mqq0RnD+zFr4uzukfVhBw=
+github.com/rabbitmq/amqp091-go v1.10.0/go.mod h1:Hy4jKW5kQART1u+JkDTF9YYOQUHXqMuhrgxOEeS7G4o=
+github.com/wagslane/go-rabbitmq v0.14.2 h1:3l75Unsy0b8sb3ILqJxMTXkQLUPI67BOuubV9YBjGLE=
+github.com/wagslane/go-rabbitmq v0.14.2/go.mod h1:6sCLt2wZoxyC73G7u/yD6/RX/yYf+x5D8SQk8nsa4Lc=
